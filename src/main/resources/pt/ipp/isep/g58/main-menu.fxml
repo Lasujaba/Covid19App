@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="200.0" prefWidth="283.0" side="LEFT" stylesheets="@main-menu.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.g58.MenuController">
+  <tabs>
+    <Tab style="-fx-padding: 3em -2.25em 3em -2.25em;" text="Vaccine Center">
+      <content>
+        <VBox alignment="TOP_CENTER" style="-fx-padding: 1em;">
+           <children>
+              <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showVaccinationCenterUI" text="Register" textAlignment="CENTER" />
+           </children>
+        </VBox>
+      </content>
+    </Tab>
+    <Tab style="-fx-padding: 3em -1.125em 3em -1.125em;" text="Employee">
+      <content>
+        <VBox alignment="TOP_CENTER" style="-fx-padding: 1em;">
+           <children>
+              <Button fx:id="EmployeeRegistration" maxWidth="Infinity" mnemonicParsing="false" onAction="#showEmployeeRegistrationUI" text="Register" textAlignment="CENTER" />
+              <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showEmployeeSearchUI" text="Search" textAlignment="CENTER" />
+           </children>
+        </VBox>
+      </content>
+    </Tab>
+      <Tab style="-fx-padding: 3em -0.7em 3em -0.7em;" text="Vaccine">
+         <content>
+            <VBox alignment="TOP_CENTER" style="-fx-padding: 1em;">
+               <children>
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showRegisterVaccineUI" text="Register" textAlignment="CENTER" />
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showScheduleVaccineUI" text="Schedule" textAlignment="CENTER" />
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showVaccineTypeUI" text="Register Type" textAlignment="CENTER" />
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showVaccineAdministrationUI" text="Administer" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+      <Tab style="-fx-padding: 3em 0 3em 0;" text="User">
+         <content>
+            <VBox alignment="TOP_CENTER" style="-fx-padding: 1em;">
+               <children>
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showUserRegistrationUI" text="Register" textAlignment="CENTER" />
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showUserImportUI" text="Import from CSV" textAlignment="CENTER" />
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showUserListUI" text="List All" textAlignment="CENTER" />
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showConsultWaitingRoomUI" text="Consult" textAlignment="CENTER" />
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showRegisterArrivalUI" text="Register arrival" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+      <Tab style="-fx-padding: 3em -2.1em 3em -2.1em;" text="Import/Export">
+         <content>
+             <VBox alignment="TOP_CENTER" style="-fx-padding: 1em;">
+               <children>
+                   <Button fx:id="importLegacyID" maxWidth="Infinity" mnemonicParsing="false" onAction="#showDataFromLegacyUI" text="ImportLegacyData" textAlignment="CENTER" />
+                   <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#saveData" text="Save" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+      <Tab style="-fx-padding: 3em -0.9em 3em -0.9em;" text="Statistics">
+         <content>
+            <VBox alignment="TOP_CENTER" style="-fx-padding: 1em;">
+               <children>
+                  <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#exportStatistics" text="Export Vaccination" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

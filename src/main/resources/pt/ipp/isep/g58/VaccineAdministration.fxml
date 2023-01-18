@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.g58.VaccineAdministrationUI">
+   <children>
+      <VBox style="-fx-padding: 1em;">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Centre" />
+                  <ComboBox fx:id="vaccinationCenterComboBox" maxWidth="Infinity" onAction="#onCenterSelect" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <TableView fx:id="QueueTable">
+              <columns>
+              </columns>
+            </TableView>
+            <HBox>
+               <children>
+                  <TableView fx:id="VaccineTable">
+                    <columns>
+                    </columns>
+                  </TableView>
+                  <VBox>
+                     <children>
+                        <Label text="LOT number (ex. E1C1D-05)" />
+                        <TextField fx:id="LOTTextField"/>
+                        <Button fx:id="RegisterVaccineButton" text="Register vaccination" onAction="#onAdministerVaccine"/>
+                        <Button fx:id="ExitButton" mnemonicParsing="false" text="Exit" onAction="#onExit"/>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.g58.EmployeeRegistrationUI">
+   <children>
+      <Text layoutX="129.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your first name:" />
+      <TextField fx:id="firstName" layoutX="288.0" layoutY="66.0" promptText="Pedro" />
+      <Text layoutX="133.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your surname:" />
+      <TextField fx:id="surName" layoutX="288.0" layoutY="103.0" promptText="Gonzales" />
+      <Text layoutX="142.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your email:" />
+      <TextField fx:id="emailField" layoutX="288.0" layoutY="138.0" promptText="pedro@gmail.com" />
+      <Text layoutX="118.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select role from list (1- 4):" />
+      <Text layoutX="213.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.5999999999999" />
+      <Button fx:id="submitButton" layoutX="417.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleSubmitButton" text="Submit" />
+      <TextField fx:id="roleField" layoutX="289.0" layoutY="209.0" prefHeight="26.0" prefWidth="32.0" promptText="1" />
+      <Text layoutX="197.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Registration" wrappingWidth="246.69921875">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="returnButton" layoutX="418.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleReturnButton" text="Return" />
+      <Text layoutX="144.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter password:" />
+      <TextField fx:id="passwd" layoutX="289.0" layoutY="170.0" promptText="Password123!" />
+      <TextArea layoutX="122.0" layoutY="250.0" prefHeight="74.0" prefWidth="182.0" text="1. Admin&#10;2. Receptionist&#10;3. Nurse&#10;4. Coordinator" />
+      <TextArea fx:id="errorArea" layoutX="113.0" layoutY="346.0" prefHeight="26.0" prefWidth="200.0" promptText="No errors" />
+   </children>
+</AnchorPane>

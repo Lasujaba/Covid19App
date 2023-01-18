@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ipp.isep.g58.DataFromlegacyUI">
+   <children>
+      <TextField fx:id="filePath" layoutX="286.0" layoutY="77.0" promptText="C:\\Documents\file.csv" />
+      <Text layoutX="193.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Import legacy data">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="177.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Path to the file:" />
+      <Button layoutX="82.0" layoutY="326.0" mnemonicParsing="false" onAction="#sortByArrival" text="Import" />
+      <Text layoutX="57.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort by Arrival time" />
+      <Text layoutX="436.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort by Leaving time" />
+      <Button layoutX="464.0" layoutY="326.0" mnemonicParsing="false" onAction="#sortByLeaving" text="Import" />
+      <Button fx:id="returnButton" layoutX="335.0" layoutY="326.0" mnemonicParsing="false" onAction="#returnMenu" text="Return" />
+      <TextArea fx:id="textAr" editable="false" layoutX="82.0" layoutY="114.0" prefHeight="200.0" prefWidth="434.0" />
+      <Button layoutX="205.0" layoutY="326.0" mnemonicParsing="false" onAction="#clearField" text="Clear" />
+   </children>
+</AnchorPane>

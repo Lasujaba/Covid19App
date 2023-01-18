@@ -1,0 +1,1 @@
+{exportInterval:15,recoveryPeriod:5}
